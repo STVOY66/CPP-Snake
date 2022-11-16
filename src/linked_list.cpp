@@ -7,7 +7,7 @@ Node::Node(int X, int Y, int Key)
     y = Y;
     key = Key;
     next = nullptr;
-}
+};
 
 List::List(Node* Head)
 {
