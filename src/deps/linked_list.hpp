@@ -6,7 +6,7 @@
 struct Node
 {
     Node(int X = 0, int Y = 0, int Key = 0);
-    int x, y;
+    const int x, y;
     int key;
     Node* next;
 };
