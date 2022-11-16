@@ -14,11 +14,9 @@ struct Node
 class List
 {
 public:
-    List(Node *Head = nullptr)
-    {
-        head = Head;
-        tail = Head;
-    }
+    List(Node *Head = nullptr);
+    List(Node* node_arr[], int length);
+    List(std::initializer_list<Node*> node_arr);
 
     int endPop();
     int endPop(Node* node);

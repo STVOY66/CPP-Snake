@@ -9,6 +9,30 @@ Node::Node(int X, int Y, int Key)
     next = nullptr;
 }
 
+List::List(Node* Head)
+{
+    head = Head;
+    tail = Head;
+};
+
+List::List(Node* node_arr[], int length)
+{
+    head = nullptr, tail = nullptr;
+    for(int i = 0; i < length; i++)
+    {
+        push(node_arr[i]);
+    }
+};
+
+List::List(std::initializer_list<Node*> node_arr)
+{
+    head = nullptr, tail = nullptr;
+    for(Node* node : node_arr)
+    {
+        push(node);
+    }
+};
+
 int List::endPop()
 {
     Node *temp1 = head, *temp2;
